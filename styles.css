@@ -53,3 +53,31 @@
         grid-row: 3 ;
     }
   }
+
+  /** Desktop Screen */
+
+  @media (min-width : 1020px) {
+    .container{
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .header ,
+    .footer{
+        grid-column: 1 / span 12;
+    }
+
+    .navigation ,
+    .main{
+        grid-column: 3 / span 8;
+    }
+
+    .sidebar ,
+    .ads{
+        grid-row: 2 / 4;
+    }
+
+    .ads{
+        grid-column: 11 / span 2;
+    }
+  }

@@ -26,3 +26,30 @@
     padding: 8px;
   }
   
+
+  /** TABLET SCREEN */
+  @media (min-width: 720px) {
+    .container{
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .header,
+    .navigation{
+        grid-column: 1 / span 12;
+    }
+
+    .main ,
+    .footer{
+        grid-column: 3 / span 10;
+    }
+
+    .sidebar ,
+    .ads{
+        grid-column: 1 / span 2;
+    }
+
+    .sidebar{
+        grid-row: 3 ;
+    }
+  }
